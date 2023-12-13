@@ -1,32 +1,31 @@
-POST http://localhost:3333/livro
+POST http://localhost:3333/tenis
 Content-Type: application/json
 
 {
-    "titulo": "jordan: 02",
-    "autor": "nike: 02",
-    "npaginas": 1000 (pares)
-
+    "modelo": "Tenis",
+    "marca": "Marca01",
+    "pares": 1000
 }
 
 ###
 
-GET http://localhost:3333/livro
+GET http://localhost:3333/tenis
 
 ###
 
-GET http://localhost:3333/livro?search=IFMS
+GET http://localhost:3333/tenis?search=Jordan
 
 ###
 
-PUT http://localhost:3333/livro/5aea1252-ee29-4cae-9bc3-04f330403d85
-Content-Type: application/json 
+PUT http://localhost:3333/tenis/013211c5-a086-4280-94a1-3f129f68a686
+Content-Type: application/json
 
 {
-    "titulo": "Livro IFMS",
-    "autor": "Autor: Luís",
-    "npaginas": 100
+    "modelo": "Jordan",
+    "marca": "Nike",
+    "pares": 200
 }
 
 ###
 
-DELETE http://localhost:3333/livro/5aea1252-ee29-4cae-9bc3-04f330403d85
+DELETE http://localhost:3333/tenis/013211c5-a086-4280-94a1-3f129f68a686
